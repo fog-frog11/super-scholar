@@ -107,7 +107,7 @@
 
 ```bash
 git clone https://github.com/fog-frog11/super-scholar.git
-cd Super-Scholar
+cd super-scholar
 ```
 
 ### 1. 后端
@@ -255,7 +255,8 @@ Provider 之间切换不会覆盖另一套已保存配置。
 - [ ] Venue 写作风格 / 历史论文分析
 - [ ] RAG 辅助论文修改
 - [ ] 公开 Evaluation Benchmark
-- [ ] 打包部署 / Hosted Demo
+- [x] Docker 本机部署
+- [ ] Hosted Demo
 
 ---
 
@@ -282,3 +283,4 @@ Super Scholar 目前是持续开发中的 **research prototype**。项目优先�
   <strong>Super Scholar</strong><br/>
   <sub>From research understanding to evidence-grounded publication decisions.</sub>
 </p>
+
