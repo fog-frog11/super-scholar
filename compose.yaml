@@ -1,0 +1,37 @@
+name: super-scholar
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    environment:
+      SUPER_SCHOLAR_ENVIRONMENT: production
+      SUPER_SCHOLAR_DATABASE_URL: sqlite:////app/backend/data/super_scholar.db
+      SUPER_SCHOLAR_STORAGE_DIR: /app/backend/storage
+      SUPER_SCHOLAR_CORS_ORIGINS: http://127.0.0.1:3000,http://localhost:3000
+    ports:
+      - 127.0.0.1:8000:8000
+    volumes:
+      - scholar_data:/app/backend/data
+      - scholar_storage:/app/backend/storage
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; urlopen('http://127.0.0.1:8000/health',timeout=3).close()"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    environment:
+      SUPER_SCHOLAR_BACKEND_URL: http://backend:8000
+      HOSTNAME: 0.0.0.0
+      PORT: "3000"
+    ports:
+      - 127.0.0.1:3000:3000
+    depends_on:
+      backend:
+        condition: service_healthy
+volumes:
+  scholar_data:
+  scholar_storage:

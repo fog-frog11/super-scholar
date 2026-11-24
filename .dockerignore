@@ -1,0 +1,12 @@
+.git
+**/.venv
+**/node_modules
+**/.next
+**/__pycache__
+backend/data
+backend/storage
+backend/storage-test
+backend/.env
+frontend/.env.local
+frontend/public/pdf.worker.min.mjs
+*.zip

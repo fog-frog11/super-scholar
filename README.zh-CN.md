@@ -282,4 +282,3 @@ Super Scholar 目前是持续开发中的 **research prototype**。项目优先�
   <strong>Super Scholar</strong><br/>
   <sub>From research understanding to evidence-grounded publication decisions.</sub>
 </p>
-

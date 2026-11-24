@@ -1,0 +1,87 @@
+<svg width="1600" height="640" viewBox="0 0 1600 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="84" y1="28" x2="1516" y2="612" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="0.52" stop-color="#12162A"/>
+      <stop offset="1" stop-color="#171326"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="430" y1="130" x2="1160" y2="505" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B7CFF"/>
+      <stop offset="0.52" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#41D1B7"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientTransform="translate(1240 100) rotate(128) scale(520 720)">
+      <stop stop-color="#725BFF" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#725BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientTransform="translate(240 570) rotate(-40) scale(480 580)">
+      <stop stop-color="#24C8B4" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#24C8B4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="640" rx="32" fill="url(#bg)"/>
+  <rect width="1600" height="640" rx="32" fill="url(#glow1)"/>
+  <rect width="1600" height="640" rx="32" fill="url(#glow2)"/>
+
+  <g opacity=".08" stroke="#D8DDF6">
+    <path d="M0 110H1600"/><path d="M0 220H1600"/><path d="M0 330H1600"/>
+    <path d="M0 440H1600"/><path d="M0 550H1600"/>
+    <path d="M160 0V640"/><path d="M320 0V640"/><path d="M480 0V640"/>
+    <path d="M640 0V640"/><path d="M800 0V640"/><path d="M960 0V640"/>
+    <path d="M1120 0V640"/><path d="M1280 0V640"/><path d="M1440 0V640"/>
+  </g>
+
+  <!-- Logo mark -->
+  <g transform="translate(116 118)" filter="url(#shadow)">
+    <rect width="112" height="112" rx="28" fill="#11172B" stroke="#8B7CFF" stroke-width="2"/>
+    <path d="M25 43C42 31 70 31 87 43V77C70 66 42 66 25 77V43Z" stroke="url(#accent)" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M56 35V78" stroke="url(#accent)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M74 25L77.2 32.8L85 36L77.2 39.2L74 47L70.8 39.2L63 36L70.8 32.8L74 25Z" fill="#A79CFF"/>
+  </g>
+
+  <text x="264" y="164" fill="#F6F7FB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="5">SUPER SCHOLAR</text>
+  <text x="116" y="308" fill="#FFFFFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="72" font-weight="720">From research to the</text>
+  <text x="116" y="390" fill="url(#accent)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="72" font-weight="720">right venue.</text>
+  <text x="118" y="449" fill="#AEB8D3" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="400">
+    Evidence-grounded research understanding · multi-source venue recommendation
+  </text>
+
+  <!-- Flow -->
+  <g transform="translate(118 504)">
+    <g>
+      <rect width="198" height="58" rx="16" fill="#161D36" stroke="#303B62"/>
+      <text x="99" y="36" text-anchor="middle" fill="#E8EBF8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="600">Understand</text>
+    </g>
+    <path d="M216 29H270" stroke="#667399" stroke-width="2"/><path d="M260 21L270 29L260 37" stroke="#667399" stroke-width="2" fill="none"/>
+    <g transform="translate(286 0)">
+      <rect width="198" height="58" rx="16" fill="#161D36" stroke="#3F4E78"/>
+      <text x="99" y="36" text-anchor="middle" fill="#E8EBF8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="600">Ground evidence</text>
+    </g>
+    <path d="M502 29H556" stroke="#667399" stroke-width="2"/><path d="M546 21L556 29L546 37" stroke="#667399" stroke-width="2" fill="none"/>
+    <g transform="translate(572 0)">
+      <rect width="198" height="58" rx="16" fill="#161D36" stroke="#4A5D83"/>
+      <text x="99" y="36" text-anchor="middle" fill="#E8EBF8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="600">Recommend</text>
+    </g>
+    <path d="M788 29H842" stroke="#667399" stroke-width="2"/><path d="M832 21L842 29L832 37" stroke="#667399" stroke-width="2" fill="none"/>
+    <g transform="translate(858 0)">
+      <rect width="198" height="58" rx="16" fill="#161D36" stroke="#4E6A83"/>
+      <text x="99" y="36" text-anchor="middle" fill="#E8EBF8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="600">Compare</text>
+    </g>
+  </g>
+
+  <!-- right-side research graph -->
+  <g transform="translate(1210 280)" opacity=".72">
+    <path d="M0 22L105 -34L202 44L165 151L45 166L0 22Z" stroke="#5C6E9A" stroke-width="2" fill="none"/>
+    <path d="M0 22L165 151M105 -34L45 166M202 44L45 166M105 -34L165 151" stroke="#344166" stroke-width="1.5"/>
+    <circle cx="0" cy="22" r="9" fill="#8B7CFF"/>
+    <circle cx="105" cy="-34" r="9" fill="#6D98FF"/>
+    <circle cx="202" cy="44" r="9" fill="#53B5E8"/>
+    <circle cx="165" cy="151" r="9" fill="#41D1B7"/>
+    <circle cx="45" cy="166" r="9" fill="#62BCA9"/>
+    <circle cx="101" cy="79" r="16" fill="#161D36" stroke="#A79CFF" stroke-width="3"/>
+  </g>
+</svg>
